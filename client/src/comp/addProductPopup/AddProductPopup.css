@@ -1,0 +1,26 @@
+button.btn.btn-primary {
+    margin-top: 15px;
+}
+
+li.totlal-price {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.error .form-control {
+    border-color: #dc3545;
+}
+
+.error .form-text {
+    color: #dc3545;
+}
+.addProduct {
+    position: absolute;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 35px;
+    width: 172px;
+    right: 1px;
+}
