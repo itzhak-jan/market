@@ -7,5 +7,5 @@ export interface OrderModel {
     cardId: string;
     creditCard: string;
     date?: Date;
-    totalPrice?: number;
+    totalPrice: number;
 }

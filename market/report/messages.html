@@ -1,0 +1,121 @@
+
+<html>
+    <head>
+        <meta content='IE=EmulateIE9' http-equiv='X-UA-Compatible' />
+        <meta content='text/html;charset=UTF-8' http-equiv='Content-Type' />
+        <script type='text/javascript' src='js/functions.js'></script>
+        <script type='text/javascript' src='js/messages.js'></script>
+        <link media='all' rel='stylesheet' type='text/css' href='css/messages.css' />
+    </head>
+    <body id='messages-body' scroll='no' onresize='buttonStatusReset();'>
+        <a id='expander_td' class='expander_td' tab-index='0' onclick='showMessages(!isExpanded());return false;' role='button' aria-label='Messages section expanded, press Enter to collapse' href='javascript:void(0);'>
+          <span></span>
+        </a>
+        <div class='main-messages' id='mainDiv'>
+            <div class='panel'>
+                <a id='error' href='javascript:void(0);' role='tab' class='button' onclick='severityTabSelected(this, true)'>
+                    <img class='panel-tab-image' src='img/error.gif'/>
+                    <span class='panel-tab-text' id='espan'>Error (0)</span>
+                    <img class='expander-arrow sort-descending' src='img/expander_arrow_down.gif'/>
+                    <img class='expander-arrow sort-ascending hidden-element' src='img/expander_arrow_up.gif'/>
+                </a>
+                <a id='warning' href='javascript:void(0);' role='tab' class='button' onclick='severityTabSelected(this, true)'>
+                    <img class='panel-tab-image' src='img/warning.gif'/>
+                    <span class='panel-tab-text' id='wspan'>Warning (0)</span>
+                    <img class='expander-arrow sort-descending' src='img/expander_arrow_down.gif'/>
+                    <img class='expander-arrow sort-ascending hidden-element' src='img/expander_arrow_up.gif'/>
+                </a>
+                <a id='info' href='javascript:void(0);' role='tab' class='button' onclick='severityTabSelected(this, true)'>
+                    <img class='panel-tab-image' src='img/info.gif'/>
+                    <span class='panel-tab-text' id='ispan'>Info (1)</span>
+                    <img class='expander-arrow sort-descending' src='img/expander_arrow_down.gif'/>
+                    <img class='expander-arrow sort-ascending hidden-element' src='img/expander_arrow_up.gif'/>
+                </a>
+                <div class='messages-node-select'>
+                    <span>Messages for:</span>
+                    <select class='node-select' id='node-select' onchange='nodeSelectChanged(this)'>
+                        <option id='select-all' value='all'>All Objects</option>
+                        <option id='select-variable' value=''>Current Object</option>
+                    </select>
+                </div>
+            </div>
+            <div id='innerDiv'>
+                <div class='messages-window'>
+
+<div id='error-messages' class='all'>
+<div class='message-flex-body'>
+</div>
+</div>
+<div id='warning-messages' class='all'>
+<div class='message-flex-body'>
+</div>
+</div>
+<div id='info-messages' class='all'>
+<div class='message-flex-body'>
+<div data-estimate='0.0' data-severity='info' class='conversion-message'>
+<tbody>
+  <tr>
+    <td>
+      <a onclick="toggle(this)" href="javascript:void(0);" class="expander-link" role="button" aria-label="M2SS0003 : SQL clause was ignored during conversion, collapsed, press Enter to expand">
+        <img class="messageMinimized" src="img/nolines_plus.gif"></img>
+      </a>
+      <img class="tableIcons" src="img/info.gif"></img>
+      &nbsp;
+      <span dataFld="description">
+        <span>M2SS0003</span>
+        <span data-estimate='0' class='estimate'>
+        
+        </span>
+        <span>: SQL clause was ignored during conversion</span>
+        <span class='number-of-issues'>(3)</span>
+      </span>
+      <table class="hidden-element">
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="3f978a38-9fc4-44bc-8687-02e1e39981e2" style="display: block;" class="node-message 3f978a38-9fc4-44bc-8687-02e1e39981e2" onclick="treeNav(&#39;3f978a38-9fc4-44bc-8687-02e1e39981e2&#39;, &#39;M2SS0003&#39;)">
+                    <img src="img/table_info.gif"></img>
+                    market.categories (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="ac38f168-6409-496f-960a-56d94091f0de" style="display: block;" class="node-message ac38f168-6409-496f-960a-56d94091f0de" onclick="treeNav(&#39;ac38f168-6409-496f-960a-56d94091f0de&#39;, &#39;M2SS0003&#39;)">
+                    <img src="img/table_info.gif"></img>
+                    market.product (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="b4848dad-b6d7-4a05-a49a-9826ba8d4a3b" style="display: block;" class="node-message b4848dad-b6d7-4a05-a49a-9826ba8d4a3b" onclick="treeNav(&#39;b4848dad-b6d7-4a05-a49a-9826ba8d4a3b&#39;, &#39;M2SS0003&#39;)">
+                    <img src="img/table_info.gif"></img>
+                    market.orders (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</tbody>
+</div>
+</div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

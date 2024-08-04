@@ -6,4 +6,5 @@ export interface OrderModel {
     address: string;
     cardId: string;
     creditCard: string;
+    totalPrice: number;
 }

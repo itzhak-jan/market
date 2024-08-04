@@ -58,7 +58,8 @@ const CheckoutPopup: React.FC = () => {
             name: name,
             address: address,
             cardId: cardId,
-            creditCard: creditCard
+            creditCard: creditCard,
+            totalPrice: totalPrice
         };
 
         sendOrder(params);

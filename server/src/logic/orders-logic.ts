@@ -6,7 +6,7 @@ import { Response } from 'express';
 const productsDal = require('../dal/product-dal');
 const ordersDal = require('../dal/orders-dal');
 
-async function addOrder(order: OrderModel, res: Response) {
+async function addOrder(order: OrderModel, res: Response): Promise<void> {
     order.date = new Date();
     let allProduct = await productsDal.getAllProducts();
     let totalPrice = 0;

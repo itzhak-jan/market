@@ -2,9 +2,11 @@ button.btn.btn-primary {
     margin-top: 15px;
 }
 
-li.totlal-price {
-    text-decoration: underline;
-    font-weight: 900;
+.total-price {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .error .form-control {
